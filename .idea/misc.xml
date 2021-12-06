@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/icon_sent.xml" value="0.203125" />
         <entry key="app/src/main/res/drawable/round_15dp.xml" value="0.203125" />
         <entry key="app/src/main/res/drawable/round_18dp.xml" value="0.203125" />
         <entry key="app/src/main/res/drawable/round_20dp.xml" value="0.203125" />
@@ -10,9 +11,11 @@
         <entry key="app/src/main/res/drawable/round_button.xml" value="0.203125" />
         <entry key="app/src/main/res/drawable/sent_icon.xml" value="0.203125" />
         <entry key="app/src/main/res/drawable/shadow.xml" value="0.203125" />
+        <entry key="app/src/main/res/font/montserrat.xml" value="0.2171875" />
         <entry key="app/src/main/res/layout/activity_login_and_register.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.43171806167400884" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_show.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_receiver.xml" value="0.67" />
       </map>
     </option>
   </component>

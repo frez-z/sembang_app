@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:maxWidth="200dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="10dp"
+    android:background="@drawable/round_15dp"
+    android:padding="8dp"
+    >
+
+    <TextView
+        android:id="@+id/sender_name"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginBottom="0dp"
+        android:maxWidth="150dp"
+        android:minWidth="70dp"
+        android:text="farez" />
+
+    <TextView
+        android:id="@+id/sender_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sender_name"
+        android:maxWidth="300dp"
+        android:minWidth="70dp"
+        android:minHeight="20dp"
+        android:text="hello" />
+
+    <TextView
+        android:id="@+id/sender_time"
+        android:layout_width="60dp"
+        android:layout_height="18dp"
+        android:layout_below="@+id/sender_message"
+        android:layout_alignEnd="@+id/sender_message"
+        android:layout_marginTop="0dp"
+        android:text="11:11 AM"
+        android:textAlignment="textEnd"
+        android:textColor="#6E6E6E"
+        android:textSize="11sp" />
+
+</RelativeLayout>

@@ -1,11 +1,9 @@
 package com.frezz.sembang
 
 import android.app.Activity
-import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import com.frezz.sembang.databinding.ActivityMainBinding
-import kotlin.concurrent.thread
 
 class MainActivity : Activity() {
     private var isRunning = false
@@ -14,7 +12,7 @@ class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        window.setBackgroundDrawableResource(R.drawable.wallpapers);
+        window.setBackgroundDrawableResource(R.drawable.background_default);
         setContentView(binding.root)
 
         binding.sendButton.setOnClickListener {

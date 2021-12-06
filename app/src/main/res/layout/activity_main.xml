@@ -3,8 +3,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_default"
     tools:ignore="HardcodedText"
     tools:context=".MainActivity">
+    <!--    remove android:background before test it out-->
+    <RelativeLayout
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="Global Chat"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/round_20dp"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/menu" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/send_text"
+        android:layout_below="@id/header_title"
+        android:layout_marginBottom="15dp"
+        tools:itemCount="60"
+        tools:listitem="@layout/item_receiver" />
 
     <EditText
         android:id="@+id/send_text"
@@ -38,7 +75,7 @@
         android:layout_marginBottom="10dp"
         android:background="@drawable/round_20dp"
         android:backgroundTint="#66E6FF"
-        android:src="@drawable/sent_icon"
+        android:src="@drawable/icon_sent"
         tools:ignore="ContentDescription" />
 
 </RelativeLayout>
