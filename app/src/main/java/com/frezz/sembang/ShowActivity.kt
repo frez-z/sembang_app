@@ -17,7 +17,7 @@ class ShowActivity : Activity() {
         setContentView(binding.root)
 
         // start gif animation
-        Glide.with(this).load(R.drawable.park_benchs).into(binding.iconAnimation)
+        Glide.with(this).load(R.drawable.gif_park_bench).into(binding.iconAnimation)
 
         // setup button
         binding.loginButton.setOnClickListener {

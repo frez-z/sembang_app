@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    tools:context=".RegisterFragment">
+
+    <RelativeLayout
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00ABCF">
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/round_20dp"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_left_arrow"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/button_back"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_register"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/header_title"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Register Your Account Now"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/round_25dp"
+        android:layout_below="@+id/text_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        >
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Email" />
+
+        <EditText
+            android:layout_centerHorizontal="true"
+            android:id="@+id/edit_username"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/edit_email"
+            android:layout_marginTop="30dp"
+            android:hint="Username"
+            />
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/edit_username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:hint="Password" />
+
+        <EditText
+            android:layout_centerHorizontal="true"
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/edit_password"
+            android:layout_marginTop="30dp"
+            android:hint="Confirm Password"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/white"
+        android:background="@drawable/round_15dp"
+        android:backgroundTint="@color/bluish"
+        android:text="register" />
+
+</RelativeLayout>

@@ -13,9 +13,12 @@
         <entry key="app/src/main/res/drawable/shadow.xml" value="0.203125" />
         <entry key="app/src/main/res/font/montserrat.xml" value="0.2171875" />
         <entry key="app/src/main/res/layout/activity_login_and_register.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.44320987654320987" />
         <entry key="app/src/main/res/layout/activity_show.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_register.xml" value="0.22" />
         <entry key="app/src/main/res/layout/item_receiver.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/item_sender.xml" value="0.6445672191528545" />
       </map>
     </option>
   </component>

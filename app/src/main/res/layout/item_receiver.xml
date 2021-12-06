@@ -31,7 +31,7 @@
 
     <TextView
         android:id="@+id/sender_time"
-        android:layout_width="60dp"
+        android:layout_width="50dp"
         android:layout_height="18dp"
         android:layout_below="@+id/sender_message"
         android:layout_alignEnd="@+id/sender_message"
