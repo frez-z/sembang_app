@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ShowActivity"
-    android:background="@color/white"
+    android:background="@color/dark_blue"
     tools:ignore="HardcodedText"
     >
 
@@ -16,7 +16,6 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="70dp"
         android:layout_marginEnd="40dp"
-        android:textColor="@color/black"
         android:textSize="20sp" />
 
     <ImageView
@@ -26,7 +25,7 @@
         android:layout_below="@+id/change_text"
         android:layout_centerInParent="true"
         android:layout_marginTop="100dp"
-        android:src="@drawable/gif_park_bench" />
+        android:src="@drawable/gif_moster_wave" />
 
     <Button
         android:id="@+id/login_button"
