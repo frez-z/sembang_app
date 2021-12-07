@@ -19,6 +19,7 @@
         android:textSize="20sp" />
 
     <EditText
+        android:textSize="16sp"
         android:id="@+id/edit_email"
         android:layout_width="325dp"
         android:layout_height="40dp"
@@ -27,11 +28,12 @@
         android:layout_marginTop="80dp"
         android:background="@drawable/round_15dp"
         android:hint="@string/email"
+        android:importantForAutofill="no"
         android:inputType="textEmailAddress"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
         android:textColor="@color/black"
-        android:importantForAutofill="no" />
+        android:textColorHint="#787878" />
 
     <TextView
         android:id="@+id/text_error_email"
@@ -52,26 +54,28 @@
         android:layout_centerHorizontal="true">
 
         <EditText
+            android:textSize="16sp"
             android:id="@+id/edit_verify"
             android:layout_width="260dp"
             android:layout_height="40dp"
             android:background="@drawable/round_15dp"
             android:hint="@string/code"
+            android:importantForAutofill="no"
             android:inputType="numberPassword"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
             android:textColor="@color/black"
-            android:importantForAutofill="no" />
+            android:textColorHint="#787878" />
 
         <ImageButton
-            android:src="@drawable/icon_check"
-            android:scaleType="fitCenter"
-            android:padding="10dp"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="5dp"
             android:background="@drawable/round_20dp"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_check"
             tools:ignore="ContentDescription" />
 
     </RelativeLayout>
@@ -87,6 +91,7 @@
         />
 
     <EditText
+        android:textSize="16sp"
         android:id="@+id/edit_username"
         android:layout_width="325dp"
         android:layout_height="40dp"
@@ -95,11 +100,12 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/round_15dp"
         android:hint="@string/username"
+        android:importantForAutofill="no"
         android:inputType="text"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
         android:textColor="@color/black"
-        android:importantForAutofill="no" />
+        android:textColorHint="#787878" />
 
     <TextView
         android:id="@+id/text_error_username"

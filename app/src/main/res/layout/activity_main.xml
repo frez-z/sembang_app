@@ -31,7 +31,7 @@
         android:layout_below="@id/header_title"
         android:layout_marginBottom="15dp"
         tools:itemCount="60"
-        tools:listitem="@layout/item_sender" />
+        tools:listitem="@layout/item_senders" />
 
     <EditText
         android:id="@+id/send_text"
@@ -45,15 +45,26 @@
         android:hint="@string/type_a_message"
         android:importantForAutofill="no"
         android:inputType="textMultiLine"
-        android:maxHeight="95dp"
+        android:maxHeight="100dp"
         android:minHeight="40dp"
         android:paddingStart="13dp"
-        android:paddingEnd="10dp"
+        android:paddingEnd="50dp"
         android:paddingTop="5dp"
         android:paddingBottom="5dp"
         android:textColor="@color/black"
         android:backgroundTint="#FFFFFFFF"
         android:textColorHint="#969696" />
+
+    <ImageButton
+        android:layout_marginEnd="5dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@id/send_text"
+        android:layout_alignBottom="@id/send_text"
+        android:background="@drawable/round_18dp"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_camera" />
 
     <ImageButton
         android:id="@+id/send_button"
@@ -64,7 +75,7 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/round_20dp"
-        android:backgroundTint="#66E6FF"
+        android:backgroundTint="#40ACC1"
         android:src="@drawable/icon_sent"
         tools:ignore="ContentDescription" />
 

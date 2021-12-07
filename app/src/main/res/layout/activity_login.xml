@@ -19,6 +19,7 @@
     android:textSize="20sp" />
 
     <EditText
+        android:textSize="16sp"
         android:id="@+id/edit_username"
         android:layout_width="325dp"
         android:layout_height="40dp"
@@ -27,11 +28,12 @@
         android:layout_marginTop="80dp"
         android:background="@drawable/round_15dp"
         android:hint="@string/username"
+        android:textColorHint="#787878"
+        android:importantForAutofill="no"
         android:inputType="text"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
-        android:textColor="@color/black"
-        android:importantForAutofill="no" />
+        android:textColor="@color/black" />
 
     <TextView
         android:id="@+id/text_error_username"
@@ -44,6 +46,7 @@
         />
 
     <EditText
+        android:textSize="16sp"
         android:id="@+id/edit_password"
         android:layout_width="325dp"
         android:layout_height="40dp"
@@ -52,11 +55,12 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/round_15dp"
         android:hint="@string/password"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
         android:textColor="@color/black"
-        android:importantForAutofill="no" />
+        android:textColorHint="#787878" />
 
     <TextView
         android:id="@+id/text_error_password"

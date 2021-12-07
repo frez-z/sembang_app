@@ -1,6 +1,7 @@
 package com.frezz.sembang
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import com.bumptech.glide.Glide
 import com.frezz.sembang.databinding.ActivityShowBinding
@@ -21,11 +22,13 @@ class ShowActivity : Activity() {
 
         // setup button
         binding.loginButton.setOnClickListener {
-            TODO("activity or fragment for login screen")
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
         }
 
         binding.registerButton.setOnClickListener {
-            TODO("activity or fragment for register screen")
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
         }
     }
 
