@@ -17,7 +17,7 @@ class ShowActivity : Activity() {
         setContentView(binding.root)
 
         // start gif animation
-        Glide.with(this).load(R.drawable.gif_park_bench).into(binding.iconAnimation)
+        Glide.with(this).load(R.drawable.gif_monster_wave).into(binding.iconAnimation)
 
         // setup button
         binding.loginButton.setOnClickListener {
@@ -39,7 +39,7 @@ class ShowActivity : Activity() {
                 animateText("Sembang with your friend", 6, 400, false)
                 animateText("family", 6, 300, false)
                 animateText("lecture", 7, 250, false)
-                animateText("engineer", 13, 200, false)
+                animateText("broker", 11, 200, false)
                 animateText("everyone") // last animation.
                 aniRunning = false
             }

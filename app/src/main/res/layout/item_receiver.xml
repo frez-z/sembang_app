@@ -17,7 +17,7 @@
         android:layout_marginBottom="0dp"
         android:maxWidth="150dp"
         android:minWidth="70dp"
-        android:text="farez" />
+        android:textColor="@color/black"/>
 
     <TextView
         android:id="@+id/sender_message"
@@ -27,7 +27,8 @@
         android:maxWidth="300dp"
         android:minWidth="70dp"
         android:minHeight="20dp"
-        android:text="hello" />
+        android:textColor="@color/black"
+        />
 
     <TextView
         android:id="@+id/sender_time"
@@ -36,7 +37,7 @@
         android:layout_below="@+id/sender_message"
         android:layout_alignEnd="@+id/sender_message"
         android:layout_marginTop="0dp"
-        android:text="11:11 AM"
+        android:text="@string/_11_11_am"
         android:textAlignment="textEnd"
         android:textColor="#6E6E6E"
         android:textSize="11sp" />

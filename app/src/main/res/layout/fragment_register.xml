@@ -15,8 +15,7 @@
         android:gravity="center"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
-        android:text="Register Your Account Now"
-        android:textColor="@color/white"
+        android:text="@string/register_your_account_now"
         android:textSize="20sp" />
 
     <EditText
@@ -27,9 +26,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
         android:background="@drawable/round_15dp"
-        android:hint="Email"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
         android:paddingStart="20dp"
-        android:paddingEnd="20dp" />
+        android:paddingEnd="20dp"
+        android:textColor="@color/black"
+        android:importantForAutofill="no" />
 
     <TextView
         android:id="@+id/text_error_email"
@@ -39,8 +41,6 @@
         android:layout_alignStart="@id/edit_email"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
-        android:text="You enter invalid email!"
-        android:textColor="@color/white"
         />
 
     <RelativeLayout
@@ -56,9 +56,12 @@
             android:layout_width="260dp"
             android:layout_height="40dp"
             android:background="@drawable/round_15dp"
-            android:hint="Code"
+            android:hint="@string/code"
+            android:inputType="numberPassword"
             android:paddingStart="20dp"
-            android:paddingEnd="20dp" />
+            android:paddingEnd="20dp"
+            android:textColor="@color/black"
+            android:importantForAutofill="no" />
 
         <ImageButton
             android:src="@drawable/icon_check"
@@ -68,7 +71,8 @@
             android:layout_height="40dp"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="5dp"
-            android:background="@drawable/round_20dp" />
+            android:background="@drawable/round_20dp"
+            tools:ignore="ContentDescription" />
 
     </RelativeLayout>
 
@@ -80,8 +84,6 @@
         android:layout_alignStart="@id/layout_verify"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
-        android:text="Your verification code not valid!"
-        android:textColor="@color/white"
         />
 
     <EditText
@@ -92,9 +94,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@drawable/round_15dp"
-        android:hint="Username"
+        android:hint="@string/username"
+        android:inputType="text"
         android:paddingStart="20dp"
-        android:paddingEnd="20dp" />
+        android:paddingEnd="20dp"
+        android:textColor="@color/black"
+        android:importantForAutofill="no" />
 
     <TextView
         android:id="@+id/text_error_username"
@@ -104,8 +109,6 @@
         android:layout_alignStart="@id/edit_username"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
-        android:text="Your username has illegal character!"
-        android:textColor="@color/white"
         />
 
 
@@ -118,9 +121,8 @@
         android:layout_marginEnd="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="50dp"
-        android:textColor="@color/white"
         android:background="@drawable/round_15dp"
         android:backgroundTint="@color/bluish"
-        android:text="next" />
+        android:text="@string/next" />
 
 </RelativeLayout>

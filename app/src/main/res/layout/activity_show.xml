@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".ShowActivity"
     android:background="@color/dark_blue"
-    tools:ignore="HardcodedText"
     >
 
 
@@ -13,19 +12,31 @@
         android:id="@+id/change_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="70dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="30dp"
         android:textSize="20sp" />
 
     <ImageView
         android:id="@+id/icon_animation"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
         android:layout_below="@+id/change_text"
         android:layout_centerInParent="true"
         android:layout_marginTop="100dp"
-        android:src="@drawable/gif_moster_wave" />
+        android:src="@drawable/gif_monster_wave"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_above="@id/login_button"
+        android:layout_alignEnd="@id/login_button"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/create_by_farez"
+        android:gravity="center"
+        />
 
     <Button
         android:id="@+id/login_button"
@@ -34,10 +45,9 @@
         android:layout_above="@+id/register_button"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:textColor="@color/white"
         android:background="@drawable/round_15dp"
         android:backgroundTint="@color/bluish"
-        android:text="Login" />
+        android:text="@string/login" />
 
     <Button
         android:id="@+id/register_button"
@@ -48,9 +58,8 @@
         android:layout_marginEnd="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="40dp"
-        android:textColor="@color/white"
         android:background="@drawable/round_15dp"
         android:backgroundTint="#FF999999"
-        android:text="register" />
+        android:text="@string/register" />
 
 </RelativeLayout>
