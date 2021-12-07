@@ -21,7 +21,7 @@ class MainActivity : Activity() {
         }
 //        val intent = Intent(this, ShowActivity::class.java)
 //        startActivity(intent)
-//        this.finish() // end current activity
+//        this.finish()
     }
 
     override fun onStart() {
