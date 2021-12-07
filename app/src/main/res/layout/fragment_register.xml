@@ -3,107 +3,111 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F0F0F0"
+    android:background="#1E2832"
     tools:context=".RegisterFragment">
-
-    <RelativeLayout
-        android:id="@+id/header_title"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#00ABCF">
-
-        <ImageButton
-            android:id="@+id/button_back"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/round_20dp"
-            android:padding="10dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/icon_left_arrow"
-            tools:ignore="ContentDescription" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginStart="10dp"
-            android:layout_toEndOf="@+id/button_back"
-            android:fontFamily="@font/montserrat"
-            android:gravity="center"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp"
-            android:text="@string/app_name"
-            android:textColor="@color/white"
-            android:textSize="17sp" />
-    </RelativeLayout>
 
     <TextView
         android:id="@+id/text_register"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_below="@id/header_title"
         android:layout_marginTop="50dp"
+        android:fontFamily="@font/montserrat"
         android:gravity="center"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
-        android:fontFamily="@font/montserrat"
         android:text="Register Your Account Now"
+        android:textColor="@color/white"
         android:textSize="20sp" />
 
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="325dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/text_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/round_15dp"
+        android:hint="Email"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp" />
+
+    <TextView
+        android:id="@+id/text_error_email"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/edit_email"
+        android:layout_alignStart="@id/edit_email"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="You enter invalid email!"
+        android:textColor="@color/white"
+        />
+
     <RelativeLayout
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/round_25dp"
-        android:layout_below="@+id/text_register"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/layout_verify"
+        android:layout_width="325dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/text_error_email"
         android:layout_marginTop="20dp"
-        android:paddingTop="50dp"
-        android:paddingBottom="50dp"
-        android:paddingStart="40dp"
-        android:paddingEnd="40dp"
-        >
+        android:layout_centerHorizontal="true">
 
         <EditText
-            android:id="@+id/edit_email"
-            android:layout_width="match_parent"
+            android:id="@+id/edit_verify"
+            android:layout_width="260dp"
             android:layout_height="40dp"
-            android:layout_centerHorizontal="true"
-            android:hint="Email" />
+            android:background="@drawable/round_15dp"
+            android:hint="Code"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp" />
 
-        <EditText
-            android:layout_centerHorizontal="true"
-            android:id="@+id/edit_username"
-            android:layout_width="match_parent"
+        <ImageButton
+            android:src="@drawable/icon_check"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_below="@+id/edit_email"
-            android:layout_marginTop="30dp"
-            android:hint="Username"
-            />
-
-        <EditText
-            android:id="@+id/edit_password"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_below="@+id/edit_username"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:hint="Password" />
-
-        <EditText
-            android:layout_centerHorizontal="true"
-            android:id="@+id/password"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_below="@+id/edit_password"
-            android:layout_marginTop="30dp"
-            android:hint="Confirm Password"
-            />
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/round_20dp" />
 
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_error_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/layout_verify"
+        android:layout_alignStart="@id/layout_verify"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Your verification code not valid!"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="325dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/text_error_verify"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_15dp"
+        android:hint="Username"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp" />
+
+    <TextView
+        android:id="@+id/text_error_username"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/edit_username"
+        android:layout_alignStart="@id/edit_username"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Your username has illegal character!"
+        android:textColor="@color/white"
+        />
+
 
     <Button
         android:id="@+id/button_register"
@@ -117,6 +121,6 @@
         android:textColor="@color/white"
         android:background="@drawable/round_15dp"
         android:backgroundTint="@color/bluish"
-        android:text="register" />
+        android:text="next" />
 
 </RelativeLayout>
