@@ -3,55 +3,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1E2832"
-    tools:context=".VerifyPasswordFragment">
+    android:background="@color/dark_blue"
+    tools:context=".LoginActivity">
 
     <TextView
-        android:id="@+id/text_register"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="50dp"
-        android:fontFamily="@font/montserrat"
-        android:gravity="center"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:text="@string/create_strong_password"
-        android:textSize="20sp" />
+    android:id="@+id/text_register"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginTop="50dp"
+    android:fontFamily="@font/montserrat"
+    android:gravity="center"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:text="@string/start_chatting_now"
+    android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/edit_password"
+        android:id="@+id/edit_username"
         android:layout_width="325dp"
         android:layout_height="40dp"
         android:layout_below="@id/text_register"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
         android:background="@drawable/round_15dp"
-        android:hint="@string/password"
-        android:importantForAutofill="no"
-        android:inputType="textPassword"
+        android:hint="@string/username"
+        android:inputType="text"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        android:importantForAutofill="no" />
 
     <TextView
-        android:id="@+id/text_error_password"
+        android:id="@+id/text_error_username"
         android:layout_width="wrap_content"
         android:layout_height="20dp"
-        android:layout_below="@id/edit_password"
-        android:layout_alignStart="@id/edit_password"
+        android:layout_below="@id/edit_username"
+        android:layout_alignStart="@id/edit_username"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         />
 
     <EditText
-        android:id="@+id/edit_password_confirm"
+        android:id="@+id/edit_password"
         android:layout_width="325dp"
         android:layout_height="40dp"
-        android:layout_below="@id/text_error_password"
+        android:layout_below="@id/text_error_username"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@drawable/round_15dp"
-        android:hint="@string/confirm_password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
@@ -59,11 +59,11 @@
         android:importantForAutofill="no" />
 
     <TextView
-        android:id="@+id/text_error_password_confirm"
+        android:id="@+id/text_error_password"
         android:layout_width="wrap_content"
         android:layout_height="20dp"
-        android:layout_below="@id/edit_password_confirm"
-        android:layout_alignStart="@id/edit_password_confirm"
+        android:layout_below="@id/edit_password"
+        android:layout_alignStart="@id/edit_password"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         />
@@ -78,9 +78,8 @@
         android:layout_marginEnd="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="50dp"
-        android:textColor="@color/white"
         android:background="@drawable/round_15dp"
         android:backgroundTint="@color/bluish"
-        android:text="@string/register" />
+        android:text="@string/login" />
 
 </RelativeLayout>
