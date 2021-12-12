@@ -14,7 +14,7 @@ class RegisterActivity: Activity() {
         setContentView(binding.root)
 
         binding.buttonRegister.setOnClickListener {
-            val intent = Intent(this, PasswordActivity::class.java)
+            val intent = Intent(this, VerifyActivity::class.java)
             startActivity(intent)
         }
     }

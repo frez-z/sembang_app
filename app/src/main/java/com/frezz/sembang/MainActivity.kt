@@ -10,9 +10,9 @@ class MainActivity : Activity() {
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
-//        val intent = Intent(this, ShowActivity::class.java)
-//        startActivity(intent)
-//        this.finish()
+        val intent = Intent(this, ShowActivity::class.java)
+        startActivity(intent)
+        this.finish()
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         window.setBackgroundDrawableResource(R.drawable.background_default);

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "294388629313",
+    "project_id": "sembang-app",
+    "storage_bucket": "sembang-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294388629313:android:fac515f4cd9aa10a1cabc0",
+        "android_client_info": {
+          "package_name": "com.frezz.sembang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294388629313-i32fcfqas97dp6ir6lig3cq8p7t8tiuo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnm233z1rvoCL7q_CqglSBZYSWw14LihM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "294388629313-i32fcfqas97dp6ir6lig3cq8p7t8tiuo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
