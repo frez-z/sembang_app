@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sembang">
         <activity
+            android:name=".ConditionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SettingActivity"
+            android:exported="true" />
+        <activity
             android:name=".UsersActivity"
             android:exported="true" />
         <activity

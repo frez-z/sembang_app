@@ -19,9 +19,23 @@
             android:fontFamily="@font/montserrat"
             android:gravity="center"
             android:paddingStart="10dp"
-            android:paddingEnd="10dp"
-            android:text="@string/global_chat"
-            android:textSize="17sp" />
+            android:paddingEnd="0dp"
+            android:text="@string/screening_chat"
+            android:textSize="17sp"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageButton
+            android:background="@drawable/round_15dp"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="fitCenter"
+            android:id="@+id/image_menu"
+            android:layout_margin="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:padding="7dp"
+            android:src="@drawable/icon_menu"
+            tools:ignore="ContentDescription" />
 
     </RelativeLayout>
 
@@ -32,7 +46,7 @@
         android:layout_below="@id/header_title"
         android:layout_marginBottom="15dp"
         tools:itemCount="60"
-        tools:listitem="@layout/item_message_unread" />
+        tools:listitem="@layout/item_message_sender" />
 
     <EditText
         android:id="@+id/send_text"
@@ -56,17 +70,18 @@
         android:backgroundTint="#FFFFFFFF"
         android:textColorHint="#969696" />
 
-    <ImageButton
-        android:layout_marginEnd="5dp"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignEnd="@id/send_text"
-        android:layout_alignBottom="@id/send_text"
-        android:background="@drawable/round_18dp"
-        android:padding="8dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/icon_camera"
-        tools:ignore="ContentDescription" />
+    <!-- TODO "after large scale update uncomment this" -->
+<!--    <ImageButton-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_alignEnd="@id/send_text"-->
+<!--        android:layout_alignBottom="@id/send_text"-->
+<!--        android:layout_marginEnd="5dp"-->
+<!--        android:background="@drawable/round_18dp"-->
+<!--        android:padding="8dp"-->
+<!--        android:scaleType="fitCenter"-->
+<!--        android:src="@drawable/icon_camera"-->
+<!--        tools:ignore="ContentDescription" />-->
 
     <ImageButton
         android:id="@+id/send_button"

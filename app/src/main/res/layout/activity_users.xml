@@ -10,7 +10,7 @@
         android:id="@+id/header_title"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#25507A">
+        android:background="@color/dark_blue">
 
         <TextView
             android:id="@+id/text_chat_name"
@@ -28,34 +28,10 @@
         android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/send_text"
         android:layout_below="@id/header_title"
         android:layout_marginBottom="15dp"
         tools:itemCount="60"
         tools:listitem="@layout/item_list_user"
         />
-
-    <EditText
-        android:id="@+id/send_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/round_18dp"
-        android:backgroundTint="#FFFFFFFF"
-        android:hint="@string/search_a_user"
-        android:importantForAutofill="no"
-        android:inputType="textMultiLine"
-        android:maxHeight="100dp"
-        android:minHeight="40dp"
-        android:paddingStart="13dp"
-        android:paddingTop="5dp"
-        android:paddingEnd="50dp"
-        android:paddingBottom="5dp"
-        android:textColor="@color/black"
-        android:textColorHint="#969696" />
-
 
 </RelativeLayout>
